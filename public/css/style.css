@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+html{
+    background-color: cadetblue;
+}
+body{
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+h3{
+    padding: 10px;
+    color: coral;
+    text-align: center;
+    border-bottom: 1px solid #afafaf;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#register{
+   margin: 25px 0;
+   display: flex;
+   justify-content: center;  
+}
+#register h4 a{
+    text-align: center;
+    padding:4px 55px;
+    background-color:gold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#register h4 a:hover{
+    color: black;
+    background-color: rgb(215, 215, 127);
+    font-weight: bolder;
+}
+table{
+    width: 90%;
+    margin:0 auto;
+    margin-top: 16px;
+    border-collapse: collapse;
+    padding: 13px;
+}
+table thead tr{
+    background-color:steelblue;
+    border-bottom: 1px solid rgb(186, 185, 185);
+}
+table thead tr td{
+   padding: 10px;
+   color: white;
+   font-size: 12px;
+   text-transform: uppercase;
+}
+table tbody tr{
+    border-bottom: 1px solid rgb(186, 185, 185);
+}
+table tbody tr td{
+    padding: 7px;
+}
+.right{
+    border-right: 1px solid black;
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(235, 235, 235);
+}
+.edit,.delete{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+}
+.delete{
+    background-color: red;
+}
+a.edit:hover{
+    background-color: rgb(21, 94, 21);
+}
+a.delete:hover{
+    background-color:rgb(186, 10, 10);
+}

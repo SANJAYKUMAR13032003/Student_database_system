@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <h3>EDIT STUDENT DETAILS</h3>
+    {{#each row}}
+    <form action="/edit/{{this.id}}" method="post">
+
+        <label for="name">NAME</label>
+        <input type="text" name="name" value="{{this.name}}" required>
+        <br><br>
+        <label for="cgpa">CGPA</label>
+        <input type="text" name="cgpa" value="{{this.cgpa}}" required>
+        <br><br>
+        <label for="department">DEPARTMENT</label>
+        <input type="text" name="department" value="{{this.department}}" required>
+
+        <a href="/">Back</a>
+        <button type="submit">Submit</button>
+    </form>
+    {{/each}}
+    {{#if msg}}
+    <div class="alert">{{msg}}</div>
+    <br>
+    {{#if val}}
+    <a href="/" class="back">Back</a>
+    {{/if}}
+    {{/if}}
+</body>
+
+</html>

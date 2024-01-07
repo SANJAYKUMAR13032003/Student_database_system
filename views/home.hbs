@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSQL_CRUD</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h3>Student database management Systems</h3>
+<div id="register">
+    <h4><a href="/register">register</a></h4>
+</div>
+<table>
+    <thead>
+        <tr>
+          <td class="right">ID</td>
+          <td class="right">NAME</td>
+          <td class="right">CGPA</td>
+          <td class="right">DEPARTMENT</td>
+          <td class="right">edit</td>
+          <td>delete</td>
+        </tr>
+    </thead>
+    <tbody>
+           {{#each rows}} 
+           <tr>
+            <td class="right">{{this.id}}</td>
+            <td class="right">{{this.name}}</td>
+            <td class="right">{{this.cgpa}}</td>
+            <td class="right">{{this.department}}</td>
+            <td class="right"><a href="/edit/{{this.id}}" class="edit">edit</a></td>
+            <td><a onclick="return confirm('Are you sure?')" href="/delete/{{this.id}}" class="delete">delete</a></td>
+           </tr>
+           {{/each}}    
+    </tbody>
+</table>
+</body>
+</html>
