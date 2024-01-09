@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200;1,300&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: none;
 }
-html{
+
+html {
     background-color: cadetblue;
 }
-body{
+
+body {
     background-color: white;
     width: 500px;
     margin: 0 auto;
@@ -17,7 +20,8 @@ body{
     font-weight: 700;
     border-radius: 10px;
 }
-h3{
+
+h3 {
     padding: 10px;
     color: coral;
     text-align: center;
@@ -27,10 +31,12 @@ h3{
     font-style: oblique;
     font-size: 20px;
 }
-form{
+
+form {
     padding: 30px;
 }
-input{
+
+input {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -39,7 +45,8 @@ input{
     border: 1px solid rgb(179, 177, 177);
     margin-top: 5px;
 }
-button{
+
+button {
     background-color: green;
     color: white;
     padding: 6px 30px 6px 30px;
@@ -50,7 +57,8 @@ button{
     margin-left: 20%;
     font-size: 16px;
 }
-a{
+
+a {
     background-color: green;
     color: white;
     padding: 5px 30px 5px 30px;
@@ -59,28 +67,30 @@ a{
     border-radius: 15px;
     margin-top: 25px;
     margin-left: 12%;
-    font-size: 14px; 
+    font-size: 14px;
     text-decoration: none;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(57, 93, 57);
 }
 
-.alert{
-    padding: 3px;
+.alert {
+    padding: 6px;
+    margin-bottom: -5px;
     display: flex;
     justify-content: center;
 }
 
-.back{
-        background-color: green;
-        color: white;
-        padding:6px 30px 6px 30px;
-        width: 100%;
-        border: none;
-        border-radius: 15px;
-        margin-top: 5px;
-        margin-left: 45%;
-        font-size: 14px;
-        text-decoration: none;
+.back {
+    background-color: green;
+    color: white;
+    width: 14% !important;
+    border: none;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    margin-top: -6px;
+    margin-left: 40%;
+    font-size: 14px;
+    text-decoration: none;
 }
